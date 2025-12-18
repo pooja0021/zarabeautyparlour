@@ -1,129 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>Zara Beauty Parlour</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="navbar">
-    <div class="logo">Zara Beauty Parlour</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Zara</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- ================= HERO / BANNER ================= -->
-  <section class="hero" id="home">
-    <img src="images/banner.jpg" alt="Zara Beauty Parlour" class="hero-img" />
+<!-- HERO -->
+<section class="hero" id="home">
+  <img src="images/banner.jpg" class="hero-img" alt="Zara Beauty Banner">
 
-    <!-- Transparent clickable button over banner -->
-    <a href="https://wa.me/917517258845" target="_blank" class="hero-book-btn" aria-label="Book Appointment">
-    </a>
-  </section>
+  <!-- INVISIBLE CLICK AREA -->
+  <a href="#contact" class="hero-book-btn" title="Book Appointment"></a>
+</section>
 
-  <!-- ================= ABOUT ================= -->
-  <section class="about" id="about">
-    <h2>Welcome to Zara Beauty Parlour</h2>
-    <p>
-      Zara Beauty Parlour is a professional beauty salon located in Pune.
-      We specialize in Bridal Makeup, Mehendi, Hair & Skin Care, and Spa services.
-      Our goal is to make every client feel confident, beautiful, and pampered.
-    </p>
-  </section>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="decor-line"></div>
+  <h2>Welcome to Zara Beauty Parlour</h2>
+  <p>
+    Zara Beauty Parlour is a professional beauty salon located in Pune.
+    We specialize in Bridal Makeup, Mehendi services, Hair & Skin Care,
+    and Spa treatments — ensuring you feel beautiful & pampered.
+  </p>
+  <div class="decor-line"></div>
+</section>
 
-  <!-- ================= SERVICES ================= -->
-  <section class="services" id="services">
-    <h2>Our Services</h2>
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2>Our Services</h2>
 
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>Bridal Makeup</h3>
-        <p>Luxury bridal looks for your special day.</p>
-        <span>Starting ₹5,999</span>
-      </div>
-
-      <div class="service-card">
-        <h3>Mehendi Design</h3>
-        <p>Traditional & modern mehendi designs.</p>
-        <span>Starting ₹999</span>
-      </div>
-
-      <div class="service-card">
-        <h3>Hair & Skin Care</h3>
-        <p>Hair spa, smoothening & skin treatments.</p>
-        <span>Starting ₹1,499</span>
-      </div>
-
-      <div class="service-card">
-        <h3>Facial & Spa</h3>
-        <p>Relaxing facials & glow therapies.</p>
-        <span>Starting ₹1,299</span>
-      </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <i class="fa-solid fa-ring"></i>
+      <h3>Bridal Makeup</h3>
+      <p>Complete bridal makeover with premium products.</p>
+      <span>₹15,000 <small>(20% OFF)</small></span>
     </div>
-  </section>
 
-  <!-- ================= GALLERY ================= -->
-  <section class="gallery" id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Gallery Image">
-      <img src="images/gallery2.jpg" alt="Gallery Image">
+    <div class="service-card">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      <h3>Mehendi Design</h3>
+      <p>Traditional & modern mehendi designs.</p>
+      <span>₹3,000 <small>(NEW)</small></span>
     </div>
-  </section>
 
-  <!-- ================= PRODUCTS ================= -->
-  <section class="products" id="products">
-    <h2>Products We Use</h2>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>Professional Makeup Kit</h3>
-        <p>Used for bridal & party makeup.</p>
-        <a href="#" class="buy-btn">Buy Now</a>
-      </div>
-
-      <div class="product-card">
-        <h3>Skin Care Essentials</h3>
-        <p>Premium skincare products.</p>
-        <a href="#" class="buy-btn">Buy Now</a>
-      </div>
+    <div class="service-card">
+      <i class="fa-solid fa-spa"></i>
+      <h3>Hair & Skin Care</h3>
+      <p>Hair spa, facial & skin treatments.</p>
+      <span>₹2,500</span>
     </div>
-  </section>
 
-  <!-- ================= CONTACT ================= -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
+    <div class="service-card">
+      <i class="fa-solid fa-face-smile"></i>
+      <h3>Facial & Spa</h3>
+      <p>Relaxing spa & glow facials.</p>
+      <span>₹1,800</span>
+    </div>
+  </div>
+</section>
 
-    <p>📞 +91 7517258845</p>
-    <p>✉️ firdousshaikh8686@gmail.com</p>
-    <p>
-      📍 Flat 306, HMS Green Sapphire,<br>
-      Ghule Nagar Lane 5,<br>
-      Near Bhavani Traders,<br>
-      Manjri Bk, Pune – 412307
-    </p>
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <h2>Bridal Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/gallery1.jpg">
+    <img src="images/gallery2.jpg">
+    <img src="images/gallery1.jpg">
+    <img src="images/gallery2.jpg">
+  </div>
+</section>
 
-    <a href="https://wa.me/917517258845" target="_blank" class="whatsapp-btn">
-      Chat on WhatsApp
-    </a>
-  </section>
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <h2>Beauty Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/product1.jpg">
+      <h4>Bridal Foundation</h4>
+      <p>₹1,999</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <p>© 2025 Zara Beauty Parlour. All Rights Reserved.</p>
-  </footer>
+    <div class="product-card">
+      <img src="images/product2.jpg">
+      <h4>Skin Glow Serum</h4>
+      <p>₹1,299</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+  </div>
+</section>
 
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+
+  <p><i class="fa-solid fa-phone"></i> +91 7517258845</p>
+  <p><i class="fa-solid fa-envelope"></i> firdousshaikh8686@gmail.com</p>
+  <p><i class="fa-solid fa-location-dot"></i>
+    Flat 306, HMS Green Sapphire, Ghule Nagar Lane 5, Manjri, Pune
+  </p>
+
+  <iframe
+    src="https://www.google.com/maps?q=Manjri+Pune&output=embed"
+    loading="lazy"></iframe>
+
+  <a class="whatsapp-btn" href="https://wa.me/917517258845" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
+  </a>
+</section>
+
+<footer class="footer">
+  © 2025 Zara Beauty Parlour
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>
